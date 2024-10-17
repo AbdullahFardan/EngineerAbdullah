@@ -1,0 +1,187 @@
+/* إعدادات الجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* تنسيق صفحة اختيار اللغة */
+.language-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001f3f;
+}
+
+.language-selection h2, .language-selection h5 {
+    font-size: 1.8em; /* حجم النص لتكون العبارات أكثر تناسقاً */
+    font-weight: normal;
+    text-align: center; /* محاذاة النص إلى الوسط */
+    margin-bottom: 10px; /* تقليل المسافة السفلية بين النصوص */
+    color: #ffffff; /* لون النص */
+}
+
+.language-selection h5 {
+    margin-top: 5px; /* تقليل المسافة العلوية لجعل العبارات قريبة من بعضها */
+    font-size: 1.5em; /* تصغير حجم النص الإنجليزي ليبدو متناسقاً */
+    opacity: 0.9; /* تقليل الشفافية قليلاً ليظهر النص الإنجليزي بشكل هادئ */
+}
+
+.language-selection h3, .language-selection h4 {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.lang-button {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px; /* تقليل حجم الأزرار لتبدو أكثر احترافية */
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.lang-button:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+    transform: scale(1.05);
+}
+
+/* إعدادات الرأس */
+header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* إعدادات الأقسام */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(248, 248, 248, 0.9);
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+section h2 {
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* إعدادات قائمة المهارات */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.1em;
+    padding: 8px;
+    color: #001f3f;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+}
+
+/* إعدادات الشهادات */
+.certificate {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.certificate:hover {
+    transform: scale(1.02);
+}
+
+.certificate h3 {
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+/* إعدادات الفوتر */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #001f3f;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.linkedin-icon, .whatsapp-icon {
+    color: #0e76a8;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover, .whatsapp-icon:hover {
+    color: #0077b5;
+}
+
+/* تفاعلية للأجهزة المحمولة */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .lang-button {
+        width: 120px;
+        padding: 10px 20px;
+    }
+    iframe {
+        height: 300px;
+    }
+    .language-selection h2, .language-selection h5 {
+        font-size: 1.6em; /* تقليل حجم الخط ليكون مناسبًا للشاشات الأصغر */
+    }
+    .language-selection h3, .language-selection h4 {
+        font-size: 1.2em;
+    }
+}
